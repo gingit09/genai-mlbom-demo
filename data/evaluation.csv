@@ -1,0 +1,4 @@
+case_id,opacity,left,right,confidence,expected_text
+synthetic-normal,0,0,0,1,NO ACUTE FINDING
+synthetic-left-opacity,1,1,0,1,LEFT OPACITY
+synthetic-right-opacity,1,0,1,1,RIGHT OPACITY

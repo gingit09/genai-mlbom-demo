@@ -1,0 +1,12 @@
+[project]
+name = "esl-synthetic-medical-ai-demo"
+version = "1.0.0"
+description = "Non-clinical synthetic fixture for AI/ML supply-chain and change-control testing"
+readme = "README.md"
+requires-python = ">=3.13"
+license = "MIT"
+dependencies = [
+  "numpy==2.4.4",
+  "onnx==1.23.0",
+  "onnxruntime==1.30.0",
+]

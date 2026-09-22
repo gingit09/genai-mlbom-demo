@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "model": "model/toy_impression_generator.onnx",
+  "model_sha256": "17e341bde16199eea432a840f27f071cb30baa7a06314e1eea4427d2b52ea59c",
+  "dataset": "data/evaluation.csv",
+  "sample_count": 3,
+  "exact_match_count": 3,
+  "exact_sequence_accuracy": 1.0,
+  "results": [
+    {
+      "case_id": "synthetic-normal",
+      "expected": "NO ACUTE FINDING",
+      "actual": "NO ACUTE FINDING",
+      "exact_match": true
+    },
+    {
+      "case_id": "synthetic-left-opacity",
+      "expected": "LEFT OPACITY",
+      "actual": "LEFT OPACITY",
+      "exact_match": true
+    },
+    {
+      "case_id": "synthetic-right-opacity",
+      "expected": "RIGHT OPACITY",
+      "actual": "RIGHT OPACITY",
+      "exact_match": true
+    }
+  ]
+}
