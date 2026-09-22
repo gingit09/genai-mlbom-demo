@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "purpose": "Reproducible non-clinical AI/ML BOM and model-change evidence demonstration",
+  "demo_model_versions": {
+    "baseline": "demo-model-v1.0.0",
+    "current": "demo-model-v1.1.0"
+  },
+  "current_source_commit": "15920931003748e845297174c1aa2521727e4efd",
+  "sbomator": {
+    "repository": "https://github.com/zuwasi/SBOMator",
+    "source_commit": "072419850232f0b618e686739c4fb81136fd02d6",
+    "base_commit": "aa7fa30baddbbfa833893f3517f84d4160e3ceea",
+    "display_version": "1.4.8"
+  },
+  "generation_command": "python <SBOMATOR>/cli-only/esl_sbomator_cli.py <DEMO_REPOSITORY> --ai-sbom --ai-check-level maximum --cyclonedx-version 1.7 --skip-db-update --no-cve --no-grype --no-report --manufacturer \"E.S.L SOFTWARE LAB LTD\" --product-version <MODEL_VERSION> -o <OUTPUT_PATH>",
+  "change_evidence_command": "python validators/generate_change_evidence.py --baseline artifacts/baseline/device-sbom.cdx.json --current artifacts/current/device-sbom.cdx.json --declaration changes/model-change-declaration.json --assessment-output artifacts/model-change-assessment.json --trigger-output artifacts/rebenchmark-trigger-report.json",
+  "validation_command": "python validators/validate_artifacts.py",
+  "comparison_normalization": [
+    "/serialNumber",
+    "/metadata/timestamp"
+  ],
+  "notes": [
+    "CycloneDX serial numbers and metadata timestamps are intentionally unique per generation and must be removed before byte-level comparison.",
+    "No online vulnerability lookup was performed; the conventional VEX documents contain no vulnerability statements.",
+    "The fixture is synthetic, non-clinical, and must not be used for patient care."
+  ]
+}

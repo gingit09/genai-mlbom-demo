@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "change_id": "toy-impression-generator-1.0.0-to-1.1.0",
+  "required": true,
+  "reason_codes": [
+    "model-content-hash-changed",
+    "model-version-changed"
+  ],
+  "required_suites": [
+    "baseline-performance",
+    "model-integrity",
+    "safety-regression"
+  ]
+}

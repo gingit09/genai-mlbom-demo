@@ -1,0 +1,1280 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.7",
+  "serialNumber": "urn:uuid:2203ab8a-ad69-46be-bc2b-40eb6eb1884e",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-09-22T11:37:48.266911",
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "name": "ESL SBOMator",
+          "version": "1.4.8",
+          "publisher": "Engineering Software Lab (ESL)",
+          "externalReferences": [
+            {
+              "type": "website",
+              "url": "https://www.eswlab.com"
+            }
+          ]
+        },
+        {
+          "type": "application",
+          "name": "syft",
+          "version": "1.36.0",
+          "author": "anchore"
+        },
+        {
+          "type": "application",
+          "name": "cdxgen",
+          "group": "@cyclonedx",
+          "version": "12.0.0",
+          "publisher": "OWASP Foundation",
+          "purl": "pkg:npm/%40cyclonedx/cdxgen@12.0.0",
+          "bom-ref": "pkg:npm/@cyclonedx/cdxgen@12.0.0"
+        }
+      ]
+    },
+    "component": {
+      "type": "application",
+      "name": "genai-mlbom-demo",
+      "version": "demo-model-v1.1.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "manufacturer": {
+        "name": "E.S.L SOFTWARE LAB LTD"
+      },
+      "supplier": {
+        "name": "E.S.L SOFTWARE LAB LTD"
+      },
+      "bom-ref": "urn:sbomator:product:genai-mlbom-demo@1.1.0"
+    },
+    "properties": [
+      {
+        "name": "esl:ai_sbom_profile",
+        "value": "enabled"
+      },
+      {
+        "name": "esl:ai_sbom_check_level",
+        "value": "maximum"
+      },
+      {
+        "name": "esl:ai_sbom_cyclonedx_version",
+        "value": "1.7"
+      },
+      {
+        "name": "esl:ai_sbom_guidance",
+        "value": "G7 SBOM-for-AI minimum elements"
+      },
+      {
+        "name": "esl:ai_sbom_manual_metadata_required",
+        "value": "true"
+      },
+      {
+        "name": "esl:nvd_snapshot",
+        "value": "2026-09-22T11:37:54.053550"
+      },
+      {
+        "name": "esl:osv_snapshot",
+        "value": "2026-09-22T11:37:54.053550"
+      },
+      {
+        "name": "esl:offline_mode",
+        "value": "true"
+      },
+      {
+        "name": "esl:proprietary_filtered",
+        "value": "0"
+      },
+      {
+        "name": "esl:quality_gate:result",
+        "value": "{\"accepted_suppressions\": [], \"blockers\": [], \"configuration_errors\": [], \"first_party_license_exception_count\": 0, \"first_party_version_exception_count\": 0, \"justified_license_exception_count\": 0, \"justified_version_exception_count\": 0, \"policy_file\": null, \"populated_license_count\": 6, \"populated_version_count\": 6, \"schema_version\": 1, \"status\": \"passed\", \"total_components\": 6, \"unresolved_blocker_count\": 0, \"validated_at\": \"2026-09-22T08:37:54+00:00\"}"
+      },
+      {
+        "name": "esl:metadata:esl_cpp_scan",
+        "value": "{\"capabilities\": {\"detected_systems\": [], \"has_cpp_evidence\": false, \"manual_review_systems\": [], \"partial_systems\": [], \"source_file_count\": 0, \"supported_systems\": [], \"warnings\": []}, \"components_found\": {\"cmake\": 0, \"conan\": 0, \"manual\": 0, \"total\": 0, \"west\": 0}, \"coverage_percentage\": 0.0, \"parsers_run\": [\"embedded_rtos\"], \"warnings\": []}"
+      },
+      {
+        "name": "esl:metadata:esl_comprehensive_scan",
+        "value": "{\"cpp_detection\": {\"capabilities\": {\"detected_systems\": [], \"has_cpp_evidence\": false, \"manual_review_systems\": [], \"partial_systems\": [], \"source_file_count\": 0, \"supported_systems\": [], \"warnings\": []}, \"components_found\": {\"cmake\": 0, \"conan\": 0, \"manual\": 0, \"total\": 0, \"west\": 0}, \"coverage_percentage\": 0.0, \"parsers_run\": [\"embedded_rtos\"], \"warnings\": []}, \"scan_date\": \"2026-09-22T11:37:48.345169\", \"scan_mode\": \"comprehensive\", \"scan_summary\": {\"cdxgen\": 5, \"syft\": 5}, \"tools_attempted\": 2, \"tools_successful\": 2}"
+      },
+      {
+        "name": "esl:metadata:esl_secret_scan",
+        "value": "{\"available\": false, \"error\": \"gitleaks binary not found\", \"files_affected\": 0, \"findings\": [], \"findings_count\": 0, \"redacted\": true, \"rules_triggered\": 0, \"scan_mode\": \"dir\", \"status\": \"not_installed\", \"tool\": \"gitleaks\", \"version\": \"\"}"
+      },
+      {
+        "name": "esl:metadata:esl_hash_generation",
+        "value": "{\"components_with_hashes\": 5, \"data_source\": \"offline-local-only\", \"hash_algorithms\": [\"SHA-256\", \"SHA-512\", \"SHA-1\"], \"scope\": \"Python local files, Maven Central, Go modules, npm registry, crates.io\", \"total_components\": 5}"
+      },
+      {
+        "name": "esl:metadata:esl_supplier_enrichment",
+        "value": "{\"components_with_real_supplier\": 1, \"components_with_supplier\": 5, \"data_source\": \"offline-local-only\", \"enriched_count\": 5, \"fda_compliance\": \"supplier_field_populated\", \"last_network_errors\": {}, \"network_failures\": {}, \"total_components\": 5}"
+      },
+      {
+        "name": "esl:metadata:esl_license_enrichment",
+        "value": "{\"api_calls\": 0, \"by_ecosystem\": {}, \"cache_hits\": 0, \"coverage_percentage\": 100.0, \"data_source\": \"offline-cache-only\", \"enriched_components\": 0, \"enrichment_date\": \"2026-09-22T11:37:53.778236\", \"normalized_existing_licenses\": 0, \"pre_existing_licenses\": 5, \"total_components\": 5, \"total_with_license\": 5}"
+      },
+      {
+        "name": "esl:metadata:esl_lifecycle_enrichment",
+        "value": "{\"active_components\": 0, \"classified_count\": 0, \"enriched_count\": 0, \"enrichment_date\": \"2026-09-22T11:37:53.599765\", \"eol_components\": 0, \"last_network_errors\": {}, \"lifecycle_coverage_by_ecosystem\": {\"pypi\": {\"classified\": 0, \"queried\": 5, \"total\": 5, \"unknown\": 5}}, \"maintenance_components\": 0, \"network_failures\": {}, \"queried_count\": 5, \"total_components\": 5, \"unknown_status\": 5}"
+      },
+      {
+        "name": "esl:metadata:esl_generation",
+        "value": "{\"generator\": \"comprehensive\", \"options\": {\"ai_check_level\": \"maximum\", \"ai_sbom_enabled\": true, \"cyclonedx_version\": \"1.7\", \"format\": \"cyclonedx-json\", \"include_cves\": false, \"max_cves_per_component\": 5, \"scan_public_code\": false}, \"project_detection\": {\"build_systems\": [], \"comprehensive_reason\": \"Multi-language/multi-system project detected\", \"languages\": [\"python\"], \"package_managers\": [\"pip\", \"poetry\"], \"project_type\": \"poetry\", \"recommended_tools\": [\"comprehensive\", \"cdxgen\"], \"source_type\": \"git_local\"}, \"source\": \"genai-mlbom-demo\", \"source_branch\": \"main\", \"source_revision\": \"15920931003748e845297174c1aa2521727e4efd\", \"source_type\": \"local_git\", \"timestamp\": \"2026-09-22T11:37:53.888803\"}"
+      }
+    ],
+    "manufacture": {
+      "name": "E.S.L SOFTWARE LAB LTD"
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "pkg:pypi/cyclonedx-python-lib@11.12.0",
+      "type": "library",
+      "name": "cyclonedx-python-lib",
+      "version": "11.12.0",
+      "cpe": "cpe:2.3:a:python-cyclonedx-python-lib:python-cyclonedx-python-lib:11.12.0:*:*:*:*:*:*:*",
+      "purl": "pkg:pypi/cyclonedx-python-lib@11.12.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "python-package-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "python"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "python-pip-requirements-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python-cyclonedx-python-lib:python_cyclonedx_python_lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_cyclonedx_python_lib:python-cyclonedx-python-lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_cyclonedx_python_lib:python_cyclonedx_python_lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python-cyclonedx-python:python-cyclonedx-python-lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python-cyclonedx-python:python_cyclonedx_python_lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_cyclonedx_python:python-cyclonedx-python-lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_cyclonedx_python:python_cyclonedx_python_lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:cyclonedx-python-lib:python-cyclonedx-python-lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:cyclonedx-python-lib:python_cyclonedx_python_lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:cyclonedx_python_lib:python-cyclonedx-python-lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:cyclonedx_python_lib:python_cyclonedx_python_lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python-cyclonedx-python-lib:cyclonedx-python-lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python-cyclonedx-python-lib:cyclonedx_python_lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_cyclonedx_python_lib:cyclonedx-python-lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_cyclonedx_python_lib:cyclonedx_python_lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:cyclonedx-python:python-cyclonedx-python-lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:cyclonedx-python:python_cyclonedx_python_lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:cyclonedx_python:python-cyclonedx-python-lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:cyclonedx_python:python_cyclonedx_python_lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python-cyclonedx-python:cyclonedx-python-lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python-cyclonedx-python:cyclonedx_python_lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python-cyclonedx:python-cyclonedx-python-lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python-cyclonedx:python_cyclonedx_python_lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_cyclonedx:python-cyclonedx-python-lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_cyclonedx:python_cyclonedx_python_lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_cyclonedx_python:cyclonedx-python-lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_cyclonedx_python:cyclonedx_python_lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:cyclonedx-python-lib:cyclonedx-python-lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:cyclonedx-python-lib:cyclonedx_python_lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:cyclonedx_python_lib:cyclonedx-python-lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:cyclonedx_python_lib:cyclonedx_python_lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:cyclonedx-python:cyclonedx-python-lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:cyclonedx-python:cyclonedx_python_lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:cyclonedx:python-cyclonedx-python-lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:cyclonedx:python_cyclonedx_python_lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:cyclonedx_python:cyclonedx-python-lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:cyclonedx_python:cyclonedx_python_lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python-cyclonedx:cyclonedx-python-lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python-cyclonedx:cyclonedx_python_lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_cyclonedx:cyclonedx-python-lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_cyclonedx:cyclonedx_python_lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:python-cyclonedx-python-lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:python_cyclonedx_python_lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:cyclonedx:cyclonedx-python-lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:cyclonedx:cyclonedx_python_lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:cyclonedx-python-lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:cyclonedx_python_lib:11.12.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "\\requirements.txt"
+        },
+        {
+          "name": "esl:foundBy",
+          "value": "syft, cdxgen"
+        },
+        {
+          "name": "esl:hash:source_file",
+          "value": "requirements.txt"
+        },
+        {
+          "name": "esl:license_source",
+          "value": "known_database"
+        },
+        {
+          "name": "esl:support_status",
+          "value": "unknown"
+        },
+        {
+          "name": "esl:lifecycle_data_source",
+          "value": "offline-skipped"
+        },
+        {
+          "name": "esl:scope",
+          "value": "runtime"
+        },
+        {
+          "name": "esl:reachability",
+          "value": "unknown"
+        },
+        {
+          "name": "esl:reachability_evidence",
+          "value": "No installed environment (.venv/site-packages) found to map Python imports; reachability undetermined"
+        },
+        {
+          "name": "esl:version_source",
+          "value": "cataloger_pin"
+        },
+        {
+          "name": "esl:confidence",
+          "value": "0.9"
+        },
+        {
+          "name": "esl:confidence_band",
+          "value": "high"
+        },
+        {
+          "name": "esl:component:esl_vendor_info",
+          "value": "{\"confidence\": \"high\", \"source_type\": \"ecosystem\", \"supplier\": \"PyPI Community\"}"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "0bcc4f1c2c54e7748388aa3c67991c9d7567237b44ad0e99ab4a0bcf9fd57be5"
+        },
+        {
+          "alg": "SHA-512",
+          "content": "11bc5f9d8d9d1e500b8164d8e92c2dc41d38aef8a42c628f25fab7a4d09abf20edc7afb4ac3a846673c32a011ecd2e0b305a3fd107fc0fc6692d276243e29cda"
+        }
+      ],
+      "supplier": {
+        "name": "PyPI Community",
+        "url": [
+          "https://pypi.org"
+        ]
+      },
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://spdx.org/licenses/Apache-2.0.html"
+          }
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "name",
+            "confidence": 0.9,
+            "methods": [
+              {
+                "technique": "binary-analysis",
+                "confidence": 0.7,
+                "value": "\\requirements.txt"
+              },
+              {
+                "technique": "binary-analysis",
+                "confidence": 0.6,
+                "value": "detected by syft"
+              },
+              {
+                "technique": "manifest-analysis",
+                "confidence": 0.6,
+                "value": "detected by cdxgen"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "bom-ref": "pkg:pypi/jsonschema@4.26.0",
+      "type": "library",
+      "name": "jsonschema",
+      "version": "4.26.0",
+      "cpe": "cpe:2.3:a:python-jsonschema:python-jsonschema:4.26.0:*:*:*:*:*:*:*",
+      "purl": "pkg:pypi/jsonschema@4.26.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "python-package-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "python"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "python-pip-requirements-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python-jsonschema:python_jsonschema:4.26.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_jsonschema:python-jsonschema:4.26.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_jsonschema:python_jsonschema:4.26.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:jsonschema:python-jsonschema:4.26.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:jsonschema:python_jsonschema:4.26.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python-jsonschema:jsonschema:4.26.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_jsonschema:jsonschema:4.26.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:python-jsonschema:4.26.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:python_jsonschema:4.26.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:jsonschema:jsonschema:4.26.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:jsonschema:4.26.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "\\requirements.txt"
+        },
+        {
+          "name": "esl:foundBy",
+          "value": "syft, cdxgen"
+        },
+        {
+          "name": "esl:hash:source_file",
+          "value": "requirements.txt"
+        },
+        {
+          "name": "esl:license_source",
+          "value": "known_database"
+        },
+        {
+          "name": "esl:support_status",
+          "value": "unknown"
+        },
+        {
+          "name": "esl:lifecycle_data_source",
+          "value": "offline-skipped"
+        },
+        {
+          "name": "esl:scope",
+          "value": "runtime"
+        },
+        {
+          "name": "esl:reachability",
+          "value": "unknown"
+        },
+        {
+          "name": "esl:reachability_evidence",
+          "value": "No installed environment (.venv/site-packages) found to map Python imports; reachability undetermined"
+        },
+        {
+          "name": "esl:version_source",
+          "value": "cataloger_pin"
+        },
+        {
+          "name": "esl:confidence",
+          "value": "0.9"
+        },
+        {
+          "name": "esl:confidence_band",
+          "value": "high"
+        },
+        {
+          "name": "esl:component:esl_vendor_info",
+          "value": "{\"confidence\": \"high\", \"source_type\": \"ecosystem\", \"supplier\": \"PyPI Community\"}"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "0bcc4f1c2c54e7748388aa3c67991c9d7567237b44ad0e99ab4a0bcf9fd57be5"
+        },
+        {
+          "alg": "SHA-512",
+          "content": "11bc5f9d8d9d1e500b8164d8e92c2dc41d38aef8a42c628f25fab7a4d09abf20edc7afb4ac3a846673c32a011ecd2e0b305a3fd107fc0fc6692d276243e29cda"
+        }
+      ],
+      "supplier": {
+        "name": "PyPI Community",
+        "url": [
+          "https://pypi.org"
+        ]
+      },
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://spdx.org/licenses/MIT.html"
+          }
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "name",
+            "confidence": 0.9,
+            "methods": [
+              {
+                "technique": "binary-analysis",
+                "confidence": 0.7,
+                "value": "\\requirements.txt"
+              },
+              {
+                "technique": "binary-analysis",
+                "confidence": 0.6,
+                "value": "detected by syft"
+              },
+              {
+                "technique": "manifest-analysis",
+                "confidence": 0.6,
+                "value": "detected by cdxgen"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "bom-ref": "pkg:pypi/numpy@2.4.4",
+      "type": "library",
+      "name": "numpy",
+      "version": "2.4.4",
+      "cpe": "cpe:2.3:a:python-numpy:python-numpy:2.4.4:*:*:*:*:*:*:*",
+      "purl": "pkg:pypi/numpy@2.4.4",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "python-package-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "python"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "python-pip-requirements-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python-numpy:python_numpy:2.4.4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_numpy:python-numpy:2.4.4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_numpy:python_numpy:2.4.4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:python-numpy:2.4.4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:python_numpy:2.4.4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:numpy:python-numpy:2.4.4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:numpy:python_numpy:2.4.4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python-numpy:numpy:2.4.4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_numpy:numpy:2.4.4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:numpy:2.4.4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:numpy:numpy:2.4.4:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "\\requirements.txt"
+        },
+        {
+          "name": "esl:foundBy",
+          "value": "syft, cdxgen"
+        },
+        {
+          "name": "esl:hash:source_file",
+          "value": "requirements.txt"
+        },
+        {
+          "name": "esl:support_status",
+          "value": "unknown"
+        },
+        {
+          "name": "esl:lifecycle_data_source",
+          "value": "offline-skipped"
+        },
+        {
+          "name": "esl:scope",
+          "value": "runtime"
+        },
+        {
+          "name": "esl:reachability",
+          "value": "reachable"
+        },
+        {
+          "name": "esl:reachability_evidence",
+          "value": "Imported directly by first-party Python source code"
+        },
+        {
+          "name": "esl:version_source",
+          "value": "cataloger_pin"
+        },
+        {
+          "name": "esl:confidence",
+          "value": "0.9"
+        },
+        {
+          "name": "esl:confidence_band",
+          "value": "high"
+        },
+        {
+          "name": "esl:component:esl_vendor_info",
+          "value": "{\"confidence\": \"high\", \"source_type\": \"known_maintainer\", \"supplier\": \"NumPy Developers\"}"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "0bcc4f1c2c54e7748388aa3c67991c9d7567237b44ad0e99ab4a0bcf9fd57be5"
+        },
+        {
+          "alg": "SHA-512",
+          "content": "11bc5f9d8d9d1e500b8164d8e92c2dc41d38aef8a42c628f25fab7a4d09abf20edc7afb4ac3a846673c32a011ecd2e0b305a3fd107fc0fc6692d276243e29cda"
+        }
+      ],
+      "supplier": {
+        "name": "NumPy Developers",
+        "url": []
+      },
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "name",
+            "confidence": 0.9,
+            "methods": [
+              {
+                "technique": "binary-analysis",
+                "confidence": 0.7,
+                "value": "\\requirements.txt"
+              },
+              {
+                "technique": "binary-analysis",
+                "confidence": 0.6,
+                "value": "detected by syft"
+              },
+              {
+                "technique": "manifest-analysis",
+                "confidence": 0.6,
+                "value": "detected by cdxgen"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "bom-ref": "pkg:pypi/onnx@1.23.0",
+      "type": "library",
+      "name": "onnx",
+      "version": "1.23.0",
+      "cpe": "cpe:2.3:a:python-onnx:python-onnx:1.23.0:*:*:*:*:*:*:*",
+      "purl": "pkg:pypi/onnx@1.23.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "python-package-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "python"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "python-pip-requirements-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python-onnx:python_onnx:1.23.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_onnx:python-onnx:1.23.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_onnx:python_onnx:1.23.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:python-onnx:1.23.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:python_onnx:1.23.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:onnx:python-onnx:1.23.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:onnx:python_onnx:1.23.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python-onnx:onnx:1.23.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_onnx:onnx:1.23.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:onnx:1.23.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:onnx:onnx:1.23.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "\\requirements.txt"
+        },
+        {
+          "name": "esl:foundBy",
+          "value": "syft, cdxgen"
+        },
+        {
+          "name": "esl:hash:source_file",
+          "value": "requirements.txt"
+        },
+        {
+          "name": "esl:license_source",
+          "value": "known_database"
+        },
+        {
+          "name": "esl:support_status",
+          "value": "unknown"
+        },
+        {
+          "name": "esl:lifecycle_data_source",
+          "value": "offline-skipped"
+        },
+        {
+          "name": "esl:scope",
+          "value": "runtime"
+        },
+        {
+          "name": "esl:reachability",
+          "value": "reachable"
+        },
+        {
+          "name": "esl:reachability_evidence",
+          "value": "Imported directly by first-party Python source code"
+        },
+        {
+          "name": "esl:version_source",
+          "value": "cataloger_pin"
+        },
+        {
+          "name": "esl:confidence",
+          "value": "0.9"
+        },
+        {
+          "name": "esl:confidence_band",
+          "value": "high"
+        },
+        {
+          "name": "esl:component:esl_vendor_info",
+          "value": "{\"confidence\": \"high\", \"source_type\": \"ecosystem\", \"supplier\": \"PyPI Community\"}"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "0bcc4f1c2c54e7748388aa3c67991c9d7567237b44ad0e99ab4a0bcf9fd57be5"
+        },
+        {
+          "alg": "SHA-512",
+          "content": "11bc5f9d8d9d1e500b8164d8e92c2dc41d38aef8a42c628f25fab7a4d09abf20edc7afb4ac3a846673c32a011ecd2e0b305a3fd107fc0fc6692d276243e29cda"
+        }
+      ],
+      "supplier": {
+        "name": "PyPI Community",
+        "url": [
+          "https://pypi.org"
+        ]
+      },
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://spdx.org/licenses/Apache-2.0.html"
+          }
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "name",
+            "confidence": 0.9,
+            "methods": [
+              {
+                "technique": "binary-analysis",
+                "confidence": 0.7,
+                "value": "\\requirements.txt"
+              },
+              {
+                "technique": "binary-analysis",
+                "confidence": 0.6,
+                "value": "detected by syft"
+              },
+              {
+                "technique": "manifest-analysis",
+                "confidence": 0.6,
+                "value": "detected by cdxgen"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "bom-ref": "pkg:pypi/onnxruntime@1.30.0",
+      "type": "library",
+      "name": "onnxruntime",
+      "version": "1.30.0",
+      "cpe": "cpe:2.3:a:python-onnxruntime:python-onnxruntime:1.30.0:*:*:*:*:*:*:*",
+      "purl": "pkg:pypi/onnxruntime@1.30.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "python-package-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "python"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "python"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "python-pip-requirements-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python-onnxruntime:python_onnxruntime:1.30.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_onnxruntime:python-onnxruntime:1.30.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_onnxruntime:python_onnxruntime:1.30.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:onnxruntime:python-onnxruntime:1.30.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:onnxruntime:python_onnxruntime:1.30.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python-onnxruntime:onnxruntime:1.30.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python_onnxruntime:onnxruntime:1.30.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:python-onnxruntime:1.30.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:python_onnxruntime:1.30.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:onnxruntime:onnxruntime:1.30.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:python:onnxruntime:1.30.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "\\requirements.txt"
+        },
+        {
+          "name": "esl:foundBy",
+          "value": "syft, cdxgen"
+        },
+        {
+          "name": "esl:hash:source_file",
+          "value": "requirements.txt"
+        },
+        {
+          "name": "esl:license_source",
+          "value": "known_database"
+        },
+        {
+          "name": "esl:support_status",
+          "value": "unknown"
+        },
+        {
+          "name": "esl:lifecycle_data_source",
+          "value": "offline-skipped"
+        },
+        {
+          "name": "esl:scope",
+          "value": "runtime"
+        },
+        {
+          "name": "esl:ai_component",
+          "value": "true"
+        },
+        {
+          "name": "esl:ai_role",
+          "value": "ml-framework"
+        },
+        {
+          "name": "esl:reachability",
+          "value": "reachable"
+        },
+        {
+          "name": "esl:reachability_evidence",
+          "value": "Imported directly by first-party Python source code"
+        },
+        {
+          "name": "esl:version_source",
+          "value": "cataloger_pin"
+        },
+        {
+          "name": "esl:confidence",
+          "value": "0.9"
+        },
+        {
+          "name": "esl:confidence_band",
+          "value": "high"
+        },
+        {
+          "name": "esl:component:esl_vendor_info",
+          "value": "{\"confidence\": \"high\", \"source_type\": \"ecosystem\", \"supplier\": \"PyPI Community\"}"
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "0bcc4f1c2c54e7748388aa3c67991c9d7567237b44ad0e99ab4a0bcf9fd57be5"
+        },
+        {
+          "alg": "SHA-512",
+          "content": "11bc5f9d8d9d1e500b8164d8e92c2dc41d38aef8a42c628f25fab7a4d09abf20edc7afb4ac3a846673c32a011ecd2e0b305a3fd107fc0fc6692d276243e29cda"
+        }
+      ],
+      "supplier": {
+        "name": "PyPI Community",
+        "url": [
+          "https://pypi.org"
+        ]
+      },
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://spdx.org/licenses/MIT.html"
+          }
+        }
+      ],
+      "evidence": {
+        "identity": [
+          {
+            "field": "name",
+            "confidence": 0.9,
+            "methods": [
+              {
+                "technique": "binary-analysis",
+                "confidence": 0.7,
+                "value": "\\requirements.txt"
+              },
+              {
+                "technique": "binary-analysis",
+                "confidence": 0.6,
+                "value": "detected by syft"
+              },
+              {
+                "technique": "manifest-analysis",
+                "confidence": 0.6,
+                "value": "detected by cdxgen"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "bom-ref": "model:model/toy_impression_generator.onnx@1.1.0",
+      "type": "machine-learning-model",
+      "name": "toy_impression_generator.onnx",
+      "version": "1.1.0",
+      "scope": "required",
+      "properties": [
+        {
+          "name": "esl:foundBy",
+          "value": "esl-model-artifact-scanner"
+        },
+        {
+          "name": "esl:ai_component",
+          "value": "true"
+        },
+        {
+          "name": "esl:ai_role",
+          "value": "model"
+        },
+        {
+          "name": "esl:model_format",
+          "value": "onnx"
+        },
+        {
+          "name": "SrcFile",
+          "value": "model/toy_impression_generator.onnx"
+        },
+        {
+          "name": "esl:file_size_bytes",
+          "value": "977"
+        },
+        {
+          "name": "sbom:version_status",
+          "value": "declared_artifact_metadata"
+        },
+        {
+          "name": "esl:version_source",
+          "value": "artifact_metadata"
+        },
+        {
+          "name": "esl:reachability",
+          "value": "reachable"
+        },
+        {
+          "name": "esl:reachability_evidence",
+          "value": "model path referenced by first-party Python source"
+        },
+        {
+          "name": "esl:support_status",
+          "value": "not_applicable"
+        },
+        {
+          "name": "esl:lifecycle_data_source",
+          "value": "model artifact inventory"
+        },
+        {
+          "name": "esl:cve_analysis",
+          "value": "not_applicable"
+        },
+        {
+          "name": "esl:cve_analysis_reason",
+          "value": "model file has no package ecosystem or CVE query route"
+        },
+        {
+          "name": "esl:license_status",
+          "value": "declared_artifact_metadata"
+        },
+        {
+          "name": "esl:scope",
+          "value": "runtime"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "description": "A deterministic non-clinical autoregressive token generator for AI/ML supply-chain and change-control demonstrations.",
+      "modelCard": {
+        "modelParameters": {
+          "task": "text-generation",
+          "architectureFamily": "other",
+          "modelArchitecture": "deterministic-autoregressive-token-generator",
+          "inputs": [
+            {
+              "format": "application/vnd.esl.synthetic-findings+json"
+            }
+          ],
+          "outputs": [
+            {
+              "format": "text/plain"
+            }
+          ]
+        },
+        "quantitativeAnalysis": {
+          "performanceMetrics": [
+            {
+              "type": "Exact sequence accuracy",
+              "value": "1.0",
+              "slice": "Three-case synthetic branch-coverage fixture"
+            }
+          ]
+        },
+        "considerations": {
+          "users": [
+            "Software supply-chain and regulatory-tooling evaluators"
+          ],
+          "useCases": [
+            "Demonstrating model inventory, integrity, change detection, and rebenchmark controls"
+          ],
+          "technicalLimitations": [
+            "Handcrafted model with a tiny fixed vocabulary and no ability to generalize",
+            "Synthetic evaluation only; results are not evidence of clinical performance"
+          ]
+        }
+      },
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "fb30420e66ab9850a7d740b29bdc04f0c1bc92a325d71156b4f230aadb99e248"
+        }
+      ],
+      "supplier": {
+        "name": "E.S.L SOFTWARE LAB LTD"
+      }
+    }
+  ],
+  "vulnerabilities": [],
+  "dependencies": [
+    {
+      "ref": "urn:sbomator:product:genai-mlbom-demo@1.1.0",
+      "dependsOn": [
+        "pkg:pypi/cyclonedx-python-lib@11.12.0",
+        "pkg:pypi/jsonschema@4.26.0",
+        "pkg:pypi/numpy@2.4.4",
+        "pkg:pypi/onnx@1.23.0",
+        "pkg:pypi/onnxruntime@1.30.0",
+        "model:model/toy_impression_generator.onnx@1.1.0"
+      ]
+    }
+  ]
+}

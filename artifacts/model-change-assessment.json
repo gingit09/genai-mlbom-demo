@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "change_id": "toy-impression-generator-1.0.0-to-1.1.0",
+  "model_path": "model/toy_impression_generator.onnx",
+  "baseline": {
+    "bom_ref": "model:model/toy_impression_generator.onnx@1.0.0",
+    "version": "1.0.0",
+    "sha256": "17e341bde16199eea432a840f27f071cb30baa7a06314e1eea4427d2b52ea59c"
+  },
+  "current": {
+    "bom_ref": "model:model/toy_impression_generator.onnx@1.1.0",
+    "version": "1.1.0",
+    "sha256": "fb30420e66ab9850a7d740b29bdc04f0c1bc92a325d71156b4f230aadb99e248"
+  },
+  "observed_changes": [
+    "content_hash",
+    "version"
+  ],
+  "declared_behavior_classes": [
+    "model_weights"
+  ],
+  "declaration_consistent": true
+}
