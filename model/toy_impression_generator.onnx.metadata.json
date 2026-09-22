@@ -1,0 +1,44 @@
+{
+  "version": "1.0.0",
+  "supplier": "E.S.L SOFTWARE LAB LTD",
+  "license": "MIT",
+  "description": "A deterministic non-clinical autoregressive token generator for AI/ML supply-chain and change-control demonstrations.",
+  "modelCard": {
+    "modelParameters": {
+      "task": "text-generation",
+      "architectureFamily": "other",
+      "modelArchitecture": "deterministic-autoregressive-token-generator",
+      "inputs": [
+        {
+          "format": "application/vnd.esl.synthetic-findings+json"
+        }
+      ],
+      "outputs": [
+        {
+          "format": "text/plain"
+        }
+      ]
+    },
+    "quantitativeAnalysis": {
+      "performanceMetrics": [
+        {
+          "type": "Exact sequence accuracy",
+          "value": "1.0",
+          "slice": "Three-case synthetic branch-coverage fixture"
+        }
+      ]
+    },
+    "considerations": {
+      "users": [
+        "Software supply-chain and regulatory-tooling evaluators"
+      ],
+      "useCases": [
+        "Demonstrating model inventory, integrity, change detection, and rebenchmark controls"
+      ],
+      "technicalLimitations": [
+        "Handcrafted model with a tiny fixed vocabulary and no ability to generalize",
+        "Synthetic evaluation only; results are not evidence of clinical performance"
+      ]
+    }
+  }
+}
