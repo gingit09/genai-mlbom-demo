@@ -1,6 +1,6 @@
 [project]
 name = "esl-synthetic-medical-ai-demo"
-version = "1.0.0"
+version = "1.1.0"
 description = "Non-clinical synthetic fixture for AI/ML supply-chain and change-control testing"
 readme = "README.md"
 requires-python = ">=3.13"

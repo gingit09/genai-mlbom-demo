@@ -21,6 +21,7 @@ def build_model() -> onnx.ModelProto:
     weights[0, 1] = -6.0  # opacity suppresses the normal-path token NO
     weights[1, 4] = 8.0   # left -> LEFT
     weights[2, 5] = 8.0   # right -> RIGHT
+    weights[3, 7] = -0.25  # v1.1 confidence calibration; output contract unchanged
 
     token_offset = CONTEXT_SIZE
     weights[token_offset + 0, 1] = 3.0   # START -> NO by default
@@ -50,15 +51,15 @@ def build_model() -> onnx.ModelProto:
     model = helper.make_model(
         graph,
         producer_name="E.S.L SOFTWARE LAB LTD",
-        producer_version="1.0.0",
+        producer_version="1.1.0",
         domain="com.eswlab.demo",
-        model_version=1,
+        model_version=2,
         opset_imports=[helper.make_opsetid("", 13)],
     )
     model.ir_version = 8
     metadata = {
         "model_name": "Toy Impression Generator",
-        "model_version": "1.0.0",
+        "model_version": "1.1.0",
         "license": "MIT",
         "intended_use": "Non-clinical AI/ML supply-chain and change-control demonstration",
         "training_data": "None; handcrafted deterministic weights",

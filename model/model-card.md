@@ -3,7 +3,7 @@
 ## Model details
 
 - **Name:** Toy Impression Generator
-- **Version:** 1.0.0
+- **Version:** 1.1.0
 - **Format:** ONNX
 - **License:** MIT
 - **Developer:** E.S.L SOFTWARE LAB LTD

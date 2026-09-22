@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "supplier": "E.S.L SOFTWARE LAB LTD",
   "license": "MIT",
   "description": "A deterministic non-clinical autoregressive token generator for AI/ML supply-chain and change-control demonstrations.",
