@@ -1,0 +1,2 @@
+# Keep checked-out bytes identical to committed blobs so SHA256SUMS verifies on every OS.
+* -text
